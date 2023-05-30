@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changing Book Information</title>
+    <!-- <script src="js/data.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        SMUCT library management system
+    </header>
+    <section class="backimg">
+               <!-- Add Book Content-->
+        <section class="add-book book-content ">
+            <h2 class="category-header">Book Receiveing Module</h2>
+            <hr>
+            <form action="#" class="add-book-form" onsubmit=" return addBook()">
+                <span tooltip="Enter Book id between 1 and 10000" flow="right">
+                    <input type="number" name="book ID" placeholder="Book ID"  max="10000"  min="1" required>
+                </span>
+                <br>
+                <span tooltip="Enter Bookname with 3-30 characters" flow="right">
+                    <input type="text" name="bookname" placeholder="Book Name" minlength="3" maxlength="30" required> 
+                </span> 
+                <br>
+                <span tooltip="Enter Expected Receiveing date with 3-30 characters" flow="right">
+                    <input type="text" name="Expected Receiveing date" placeholder="Expected Receiveing date" minlength="3" maxlength="30" required>
+                </span> 
+                <br>
+                <span tooltip="Enter Receiveing date with 3-30 characters" flow="right">
+                    <input type="text" name="publisher" placeholder="Receiveing date" required>
+                </span> 
+                <br>
+                <span tooltip="Payment status" flow="right">
+                    <input type="number" name="publishyear" placeholder="Payment status" " required>
+                </span> 
+                <br>
+                <button type="submit">submit</button> <button>Reset</button>
+            </form>
+        </section>
+
+        </section>
+    </section>
+
+    <footer>
+        &copy; Developed by: Us 
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="/Admin_dashboard/js/index.js"></script>
+</body>
+</html>

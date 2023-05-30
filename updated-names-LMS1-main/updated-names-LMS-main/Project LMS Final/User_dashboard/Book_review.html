@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Review</title>
+    <!-- <script src="js/data.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style_book_review.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        SMUCT library management system
+        <button><a href="dashboard1.html"><li class="fa fa-home">Home</a></button> 
+    </header>
+    <section class="backimg">
+               <!-- Add Book Content-->
+        <section class="add-book book-content ">
+            <h2 class="category-header">Book Review</h2>
+            <hr>
+            <form action="#" class="add-book-form" onsubmit=" return addBook()">
+                <br>
+                <span tooltip="Enter Bookname with 3-30 characters" flow="right">
+                    <input type="text" name="bookname" placeholder="Book Name" minlength="3" maxlength="30" required> 
+                </span> 
+                <br>
+                <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                    <input type="text" name="author" placeholder="Author" minlength="3" maxlength="30" required>
+                </span> 
+                <br>
+                <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                    <input type="text" name="publisher" placeholder="Publisher" required>
+                </span> 
+                <br>
+                <span tooltip="Publish Year should be between 1900 and 2023" flow="right">
+                    <input type="number" name="publishyear" placeholder="Year of Publishing" min="1900" max="2023" required>
+                </span> 
+                <br>
+                <span tooltip="Enter Bookname with 3-300 characters" flow="right">
+                    <input type="text" name="" placeholder="Book Description" minlength="3" maxlength="300" required> 
+                </span> 
+                <br>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>   
+                <button type="submit">Submit</button> <button>Reset</button>
+            </form>
+             </section>
+
+        </section>
+    </section>
+
+    <footer>
+        &copy; Developed by:Us
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Requesting for membership</title>
+    <!-- <script src="js/data.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        SMUCT library management system
+        <button><a href="dashboard1.html"><li class="fa fa-home">Home</a></button> 
+    </header>
+    <section class="backimg">
+               <!-- Add Book Content-->
+        <section class="add-book book-content ">
+            <h2 class="category-header">Requesting for membership</h2>
+            <hr>
+            <form action="#" class="add-book-form" onsubmit=" return addBook()">
+                <span tooltip="Enter Name with 3-30 characters" flow="right">
+                    <input type="text" name="Name" placeholder="Name" minlength="3" maxlength="30" required> 
+                </span> 
+                <br>
+                <span tooltip="Enter ID between 1 and 10000" flow="right">
+                    <input type="number" name="ID" placeholder="ID"  max="10000"  min="1" required>
+                </span>
+                <br>
+                <span tooltip="Enter Bookname with 3-30 characters" flow="right">
+                    <input type="text" name="Semester" placeholder="Semester" minlength="3" maxlength="30" required> 
+                </span> 
+                <br>
+                <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                    <input type="text" name="Batch" placeholder="Batch" minlength="3" maxlength="30" required>
+                </span> 
+                <br>
+                <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                    <input type="text" name="Contact Number" placeholder="Contact Number" required>
+                </span> 
+                <br>
+                <span tooltip="Publish Year should be between 1900 and 2023" flow="right">
+                    <input type="number" name="E-mail" placeholder="E-mail" min="1900" max="2023" required>
+                </span> 
+                <br>
+                <button type="submit">Send Request</button> <button>Reset</button>
+            </form>
+        </section>
+
+        </section>
+    </section>
+
+    <footer>
+        &copy; Developed by:Us
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
