@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library Management System</title>
+    <!-- <script src="js/data.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        SMUCT library management system
+    </header>
+
+    <section class="backimg">
+            <!-- Update Book Content -->
+        <section class="add-book book-content ">
+            <h2 class="category-header"> Update Book</h2>
+            <hr>
+
+            <form action="#" class="update-book-form" onsubmit="return updateBook()">
+                <span tooltip="Enter Book id between 1 and 10000" flow="right">
+                    <input type="number" name="bookid" placeholder="BookId"  max="10000"  min="1"required>
+                </span> 
+                <br>
+                <span tooltip="Enter Bookname with 3-30 characters" flow="right">
+                    <input type="text" name="updatebookname" placeholder="Book Name" minlength="3" maxlength="30"> 
+                </span> 
+                <br>
+                <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                    <input type="text" name="updateauthor" placeholder="Author" minlength="3" maxlength="30">
+                </span> 
+                <br>
+                <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                    <input type="text" name="updatepublisher" placeholder="Publisher">
+                </span> 
+                <br>
+                <span tooltip="Publish Year should be between 1900 and 2023" flow="right">
+                    <input type="number" name="updatepublishyear" placeholder="Year of Publishing" min="1900" max="2023">
+                </span> 
+                <br>
+                <button type="submit">Update Book</button> <button>Reset</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        &copy; Developed by:Us
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
+
