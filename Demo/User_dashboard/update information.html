@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Information</title>
+    <!-- <script src="js/data.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">   
+</head>
+<body>
+    <section id="background">
+        <div id="top">
+            <a href="#" class="fa fa-envelope" style="text-decoration:none; color: white;">monsurtasin@gmail.com</a>
+            <a href="#" class="fa fa-phone" style="text-decoration:none; color: white;">+8801797256962</a>
+            <a href="#" class="fa fa-facebook" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+            <a href="#" class="fa fa-instagram" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+            <a href="#" class="fa fa-twitter" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+        </div>
+
+        <div id="logo"><b style="color:#2c7ad6;">SMUCT LMS</b></div>
+
+        <div id="menu1">
+            <ul>
+                <li><a href="/User_dashboard/dashboard1.html" class="fa fa-list">Dashboard</a></li>
+                <li><a href="#" class="fa fa-image">Feedback</a></li>
+                <li><a href="/Index.html" class="fa fa-power-off">Log Out</a></li>
+            </ul>
+        </div>
+        
+        <div class="backimg">
+            <!-- Add Book Content -->
+            <div class="add-book book-content ">
+                <h2 class="category-header">Update Information</h2>
+                <hr>
+                <form action="#" class="add-book-form" onsubmit=" return addBook()">
+                    <span tooltip="Enter Name with 3-30 characters" flow="right">
+                        <input type="text" name="Name" placeholder="Name" minlength="3" maxlength="30" required> 
+                    </span> 
+                    <br>
+                    <span tooltip="Enter ID between 9-12" flow="right">
+                        <input type="number" name="ID" placeholder="ID"  max="9"  min="1" required>
+                    </span>
+                    <br>
+                    <span tooltip="Enter between 1-2 characters" flow="right">
+                        <input type="number" name="Semester" placeholder="Semester" max="10000"  min="1" required> 
+                    </span> 
+                    <br>
+                    <span tooltip="Enter number between 1-2 characters" flow="right">
+                        <input type="number" name="Batch" placeholder="Batch" max="1"  min="2" required>
+                    </span> 
+                    <br>
+                    <span tooltip="Enter contact number between 11-15 characters" flow="right">
+                        <input type="number" name="Contact Number" placeholder="Contact Number" max="11"  min="15" required>
+                    </span> 
+                    <br>
+                    <span tooltip="Publish Year should be between 12 to 35" flow="right">
+                        <input type="text" name="E-mail" placeholder="E-mail" minlength="12" maxlength="35" required>
+                    </span> 
+                    <br>
+                    <button type="submit">Send Request</button> <button>Reset</button>
+                </form>
+            </div>
+        </div>
+    </section>
+      
+    <footer>
+        &copy; 2023 Website. All rights reserved
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
