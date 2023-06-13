@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <div id="background">
+        <div id="top">
+            <a href="#" class="fa fa-envelope" style="text-decoration:none; color: white;">monsurtasin@gmail.com</a>
+            <a href="#" class="fa fa-phone" style="text-decoration:none; color: white;">+8801797256962</a>
+            <a href="#" class="fa fa-facebook" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+            <a href="#" class="fa fa-instagram" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+            <a href="#" class="fa fa-twitter" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+        </div>
+
+        <div id="logo"><b style="color:#2c7ad6;">SMUCT LMS</b></div>
+
+        <div id="menu1">
+            <ul>
+                <li><a href="dashboard1.html" class="fa fa-list">Dashboard</a></li>
+                <li><a href="#" class="fa fa-image">Feedback</a></li>
+                <li><a href="/Index.html" class="fa fa-power-off">Log Out</a></li>
+            </ul>
+        </div>
+        
+        <div class="backimg">
+            <!-- Add Book Content-->
+            <section class="add-book book-content ">
+                <h2 class="category-header"> Update Book</h2>
+                <hr>
+    
+                <form action="#" class="update-book-form" onsubmit="return updateBook()">
+                    <span tooltip="Enter Book id between 1 and 1000000000" flow="right">
+                        <input type="number" name="bookid" placeholder="BookId"  max="1000000000"  min="1"required>
+                    </span> 
+                    <br>
+                    <span tooltip="Enter Bookname with 3-30 characters" flow="right">
+                        <input type="text" name="updatebookname" placeholder="Book Name" minlength="3" maxlength="30"> 
+                    </span> 
+                    <br>
+                    <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                        <input type="text" name="updateauthor" placeholder="Author" minlength="3" maxlength="30">
+                    </span> 
+                    <br>
+                    <span tooltip="Enter Author's name with 3-30 characters" flow="right">
+                        <input type="text" name="updatepublisher" placeholder="Publisher">
+                    </span> 
+                    <br>
+                    <span tooltip="Publish Year should be between 1900 and 2024" flow="right">
+                        <input type="number" name="updatepublishyear" placeholder="Year of Publishing" min="1900" max="2023">
+                    </span> 
+                    <br>
+                    <button class="btn" type="submit">Update Book</button> 
+                    <button class="btn" type="reset">Reset</button>
+                </form>
+            </section>
+        </div>  
+    </div>
+
+    <footer class="footer">
+        &copy; 2023 Website. All rights reserved
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
